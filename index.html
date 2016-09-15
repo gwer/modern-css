@@ -1,186 +1,657 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Современный CSS</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+	<link rel="stylesheet" href="index.css">
 </head>
 <body class="shower list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Современный CSS</h1>
 	</header>
-	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="" class="cover">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
-		<style>
-			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-				}
-			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
-				font-style:italic;
-				font-size:20px;
-				}
-				#cover p a {
-					color:#FFF;
-					}
-		</style>
-	</section>
+
 	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+		<h2 class="shout shrink">Современный CSS</h2>
 	</section>
+
 	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+        <div class="scroll-play">
+            <pre>
+                <code>.example {</code>
+                <code>    display: -webkit-box;</code>
+                <code>    display: -webkit-flex;</code>
+                <code>    display: -moz-box;</code>
+                <code>    display: -ms-flexbox;</code>
+                <code>    display: flex;</code>
+                <code>    -webkit-transition: all .5s;</code>
+                <code>    -o-transition: all .5s;</code>
+                <code>    -moz-transition: all .5s;</code>
+                <code>    transition: all .5s;</code>
+                <code>    -webkit-user-select: none;</code>
+                <code>       -moz-user-select: none;</code>
+                <code>        -ms-user-select: none;</code>
+                <code>            user-select: none;</code>
+                <code>    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));</code>
+                <code>    background: -webkit-linear-gradient(top, white, black);</code>
+                <code>    background: -moz-linear-gradient(top, white, black);</code>
+                <code>    background: -o-linear-gradient(top, white, black);</code>
+                <code>    background: linear-gradient(to bottom, white, black);</code>
+                <code>}</code>
+            </pre>
+        </div>
 	</section>
+
 	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+		<h2>С Autoprefixer:</h2>
+        <pre>
+            <code>.example {</code>
+            <code>    display: flex;</code>
+            <code>    transition: all .5s;</code>
+            <code>    user-select: none;</code>
+            <code>    background: linear-gradient(to bottom, white, black);</code>
+            <code>}</code>
+        </pre>
 	</section>
+
 	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
+		<h2>Андрей Ситник, Злые Марсиане | Используем PostCSS правильно | FrontTalks 2015</h2>
+		<a href="https://youtu.be/qhouBGNncGQ">https://youtu.be/qhouBGNncGQ</a>
 	</section>
+
 	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
+		<h2 class="shout shrink">CSS 3</h2>
 	</section>
+
 	<section class="slide">
-		<h2>Code samples</h2>
+		<img src="pictures/css3.png" class="cover" alt="">
+	</section>
+
+	<section class="slide">
+		<h2>2010</h2>
+		<ul>
+		    <li>Selectors L3</li>
+		    <li>Backgrounds & Borders</li>
+		    <li>Animations</li>
+		    <li>Transitions</li>
+		    <li>Transforms</li>
+		    <li>Media Queries</li>
+		</ul>
+	</section>
+
+
+<!-- Flexbox -->
+
+	<section class="slide">
+		<h2 class="shout shrink">Flexbox</h2>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">96.92%</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Для IE8/9 есть полифил</h2>
+		<a href="https://github.com/jonathantneal/flexibility">https://github.com/jonathantneal/flexibility</a>
+		<p class="note">Это уже почти 98%</p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Flexbox</h2>
+	</section>
+
+	<section class="slide">
+		<h2>flex-direction</h2>
+		<p>Задаёт главную ось и направление элементов в контейнере.</p>
+	</section>
+
+	<section class="slide">
+		<h2>flex-direction: row</h2>
+		<div class="outer flex row">
+		    <div class="inner">1</div>
+		    <div class="inner">2</div>
+		    <div class="inner">3</div>
+		    <div class="inner">4</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>flex-direction: row-reverse</h2>
+		<div class="outer flex row-reverse">
+		    <div class="inner">1</div>
+		    <div class="inner">2</div>
+		    <div class="inner">3</div>
+		    <div class="inner">4</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>flex-direction: column</h2>
+		<div class="outer flex column">
+		    <div class="inner">1</div>
+		    <div class="inner">2</div>
+		    <div class="inner">3</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>flex-direction: column-reverse</h2>
+		<div class="outer flex column-reverse">
+		    <div class="inner">1</div>
+		    <div class="inner">2</div>
+		    <div class="inner">3</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>flex-wrap</h2>
+		<p>Определяет, будет ли контейнер однострочным или многострочным.</p>
+	</section>
+
+	<section class="slide">
+		<h2>flex-wrap: nowrap</h2>
+		<div class="outer flex nowrap">
+		    <div class="inner">1</div>
+		    <div class="inner">2</div>
+		    <div class="inner">3</div>
+		    <div class="inner">4</div>
+		    <div class="inner">5</div>
+		    <div class="inner">6</div>
+		    <div class="inner">7</div>
+		    <div class="inner">8</div>
+		    <div class="inner">9</div>
+		    <div class="inner">10</div>
+		    <div class="inner">11</div>
+		    <div class="inner">12</div>
+		    <div class="inner">13</div>
+		    <div class="inner">14</div>
+		    <div class="inner">15</div>
+		    <div class="inner">16</div>
+		    <div class="inner">17</div>
+		    <div class="inner">18</div>
+		    <div class="inner">19</div>
+		    <div class="inner">20</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>flex-wrap: wrap</h2>
+		<div class="outer flex wrap">
+		    <div class="inner">1</div>
+		    <div class="inner">2</div>
+		    <div class="inner">3</div>
+		    <div class="inner">4</div>
+		    <div class="inner">5</div>
+		    <div class="inner">6</div>
+		    <div class="inner">7</div>
+		    <div class="inner">8</div>
+		    <div class="inner">9</div>
+		    <div class="inner">10</div>
+		    <div class="inner">11</div>
+		    <div class="inner">12</div>
+		    <div class="inner">13</div>
+		    <div class="inner">14</div>
+		    <div class="inner">15</div>
+		    <div class="inner">16</div>
+		    <div class="inner">17</div>
+		    <div class="inner">18</div>
+		    <div class="inner">19</div>
+		    <div class="inner">20</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>flex-wrap: wrap-reverse</h2>
+		<div class="outer flex wrap-reverse">
+		    <div class="inner">1</div>
+		    <div class="inner">2</div>
+		    <div class="inner">3</div>
+		    <div class="inner">4</div>
+		    <div class="inner">5</div>
+		    <div class="inner">6</div>
+		    <div class="inner">7</div>
+		    <div class="inner">8</div>
+		    <div class="inner">9</div>
+		    <div class="inner">10</div>
+		    <div class="inner">11</div>
+		    <div class="inner">12</div>
+		    <div class="inner">13</div>
+		    <div class="inner">14</div>
+		    <div class="inner">15</div>
+		    <div class="inner">16</div>
+		    <div class="inner">17</div>
+		    <div class="inner">18</div>
+		    <div class="inner">19</div>
+		    <div class="inner">20</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>justify-content</h2>
+		<img src="pictures/justify-content.png" alt="">
+		<p class="note">Определяет выравнивание относительно основной оси путём распределения свободного места.</p>
+	</section>
+
+	<section class="slide">
+		<h2>align-items</h2>
+		<img src="pictures/align-items.png" alt="">
+		<p class="note">Определяет выравнивание по поперечной оси.</p>
+	</section>
+
+	<section class="slide">
+		<h2>align-content</h2>
+		<p class="note">Определяет выравнивание строк многострочного flexbox по поперечной оси.</p>
+		<p class="note">Работает так же, как justify-content.</p>
+	</section>
+
+	<section class="slide">
+		<div class="outer flex wrap justify-between">
+		    <div class="inner">1</div>
+		    <div class="inner red">2</div>
+		    <div class="inner">3</div>
+		    <div class="inner">4</div>
+		    <div class="inner green">5</div>
+		    <div class="inner green">6</div>
+		    <div class="inner">7</div>
+		    <div class="inner green">8</div>
+		    <div class="inner red">9</div>
+		    <div class="inner">10</div>
+		    <div class="inner">11</div>
+		    <div class="inner">12</div>
+		    <div class="inner red">13</div>
+		    <div class="inner red">14</div>
+		</div>
+	</section>
+
+	<section class="slide">
+        <pre>
+            <code>.red {order: -1}</code>
+            <code>.green {order: 1}</code>
+        </pre>
+
+		<div class="outer flex wrap justify-between order-example">
+		    <div class="inner">1</div>
+		    <div class="inner red">2</div>
+		    <div class="inner">3</div>
+		    <div class="inner">4</div>
+		    <div class="inner green">5</div>
+		    <div class="inner green">6</div>
+		    <div class="inner">7</div>
+		    <div class="inner green">8</div>
+		    <div class="inner red">9</div>
+		    <div class="inner">10</div>
+		    <div class="inner">11</div>
+		    <div class="inner">12</div>
+		    <div class="inner red">13</div>
+		    <div class="inner red">14</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>flex-basis</h2>
+		<p class="note">Задаёт размер элемента по умолчанию.</p>
+	</section>
+
+	<section class="slide">
+		<h2>flex-grow</h2>
+		<div class="outer flex">
+		    <div class="inner">0</div>
+		    <div class="inner">0</div>
+		    <div class="inner">0</div>
+		    <div class="inner">0</div>
+		</div>
+
+		<p></p>
+
+		<div class="outer flex">
+		    <div class="inner grow-1">1</div>
+		    <div class="inner">0</div>
+		    <div class="inner grow-1">1</div>
+		    <div class="inner grow-2">2</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>flex-basis: 25%; flex-shrink: 1</h2>
+		<div class="outer flex">
+		    <div class="inner basis-25">Lorem</div>
+		    <div class="inner basis-25">ipsum</div>
+		    <div class="inner basis-25">dolor</div>
+		    <div class="inner basis-25">sit</div>
+		    <div class="inner basis-25">amet</div>
+		</div>
+
+		<p></p>
+
+		<h2>flex-basis: 25%; flex-shrink: 0</h2>
+		<div class="outer flex">
+		    <div class="inner basis-25 shrink-0">Lorem</div>
+		    <div class="inner basis-25 shrink-0">ipsum</div>
+		    <div class="inner basis-25 shrink-0">dolor</div>
+		    <div class="inner basis-25 shrink-0">sit</div>
+		    <div class="inner basis-25 shrink-0">amet</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>align-self</h2>
+		<p class="note">Позволяет переопределить выравнивание, заданное в align-items для отдельного элемента.</p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Примеры</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Центрирование</h2>
+
 		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
+		    <code>&lt;div class="outer"&gt;</code>
+            <code>    &lt;div class="inner"&gt;Some Content&lt;/div&gt;</code>
+            <code>&lt;/div></code>
+		</pre>
+
+		<pre>
+		    <code>.outer {</code>
+            <code>    display: flex;</code>
+            <code>    justify-content: center;</code>
+            <code>    align-items: center;</code>
+            <code>}</code>
 		</pre>
 	</section>
+
 	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
+		<h2>Центрирование</h2>
+
+		<pre>
+		    <code>.outer {</code>
+            <code>    display: flex;</code>
+            <code>}</code>
+		    <code>.inner {</code>
+            <code>    margin: auto;</code>
+            <code>}</code>
+		</pre>
 	</section>
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
-	</section>
+
 	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
+		<h2>Прижатый футер</h2>
+
+        <pre>
+            <code>&lt;div class="wrapper"&gt;</code>
+            <code>    &lt;div class="content"&gt;&lt;/div&gt;</code>
+            <code>    &lt;div class="footer"&gt;&lt;/div&gt;</code>
+            <code>&lt;/div&gt;</code>
+        </pre>
 	</section>
+
 	<section class="slide">
-		<h2>Inner navigation</h2>
+		<h2>Прижатый футер</h2>
+
+		<pre>
+            <code>.wrapper {</code>
+            <code>    display: flex;</code>
+            <code>    flex-direction: column;</code>
+            <code>}</code>
+            <code>.content {</code>
+            <code>    flex-grow: 1;</code>
+            <code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Отзывчивость</h2>
+		<div class="outer flex wrap width-play">
+		    <div class="inner grow-1">1</div>
+		    <div class="inner grow-1">2</div>
+		    <div class="inner grow-1">3</div>
+		    <div class="inner grow-1">4</div>
+		    <div class="inner grow-1">5</div>
+		    <div class="inner grow-1">6</div>
+		    <div class="inner grow-1">7</div>
+		    <div class="inner grow-1">8</div>
+		    <div class="inner grow-1">9</div>
+		    <div class="inner grow-1">10</div>
+		    <div class="inner grow-1">11</div>
+		    <div class="inner grow-1">12</div>
+		    <div class="inner grow-1">13</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Сетки на флексбоксах</h2>
+		<a href="http://flexboxgrid.com/">http://flexboxgrid.com/</a>
+	</section>
+
+	<section class="slide">
+		<h2>Flexbox, теперь понятно</h2>
+		<a href="https://pepelsbey.net/2013/05/flexbox-gotcha/">https://pepelsbey.net/2013/05/flexbox-gotcha/</a>
+	</section>
+
+
+<!-- Columns -->
+
+	<section class="slide">
+		<h2 class="shout shrink">Колонки</h2>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">96.93%</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Объявление колонок</h2>
+
+		<pre>
+            <code>column-count: 3;</code>
+            <code>column-width: 200px;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Объявление колонок</h2>
+
+		<pre>
+            <code class="comment">/* Короткая запись: */</code>
+            <code>columns: 3 200px;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Прочие свойства</h2>
+
+		<pre>
+            <code class="comment">/* Интервал: */</code>
+            <code>column-gap: 2em;</code>
+            <code class="comment">/* Разделитель: */</code>
+            <code>column-rule: 1px solid #aaa;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<div class="columns width-play">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis turpis ut mollis vehicula. Fusce pharetra enim a purus vehicula interdum. Nullam ut commodo nisi, sed convallis nulla. Praesent ante orci, finibus vel ornare eu, molestie ut nulla. Morbi pharetra ornare nibh, at vehicula felis iaculis sed. Mauris consequat diam bibendum, maximus augue a, vestibulum dolor.
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Проблемы колонок</h2>
+
+		<ul>
+		    <li>Производительность</li>
+		    <li>Внезапность</li>
+		    <li>Неуправляемость</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Скорость</h2>
+		<p class="note place bottom right">Здесь должна была быть «Производительность», но она не влезла в слайд.</p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Firefox</h2>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Внезапность</h2>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Chromium-based</h2>
+	</section>
+
+	<section class="slide">
+		<pre>
+            <code>.outer>.inner*4</code>
+		</pre>
+
+		<pre>
+            <code>.outer {</code>
+            <code>    columns: 2 100px;</code>
+            <code>}</code>
+            <code>.inner {</code>
+            <code>    height: 100px;</code>
+            <code>    break-inside: avoid;</code>
+            <code>    box-shadow: 3px 3px 10px 3px #000;</code>
+            <code>    margin-bottom: 50px;</code>
+            <code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<img src="pictures/columns-shadows.png" alt="">
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">orphans & widows</h2>
+	</section>
+
+	<section class="slide">
+		<img src="pictures/untagged_rotate3d.png" alt="">
+	</section>
+
+	<section class="slide">
+		<img src="pictures/untagged_rotateZ.png" alt="">
+	</section>
+
+	<section class="slide">
+		<img src="pictures/untagged_old.png" alt="">
+	</section>
+
+	<section class="slide">
+		<pre>
+            <code class="comment">/* Было: */</code>
+            <code>rotateZ(37deg);</code>
+            <code class="comment">/* Стало: */</code>
+            <code>rotate3d(0, 0, 1, 37deg);</code>
+		</pre>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>position: absolute</h2>
 		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
+		    <li class="next">Абсолютно спозиционированный блок.</li>
+		    <li class="next">Выходит за пределы колонки по вертикали.</li>
+		    <li class="next">Позиционируется относительно блока внутри контейнера (.columns>.relative>.absolute).</li>
 		</ol>
 	</section>
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+
+	<section class="slide">
+		<h2 class="shout shrink">Неуправляемость</h2>
 	</section>
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
+
+	<section class="slide">
+		<h2 class="shout shrink">Grid Layout</h2>
 	</section>
-	<p class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</p>
-	<!--
-		To hide progress bar from entire presentation
-		just remove “progress” element.
-		-->
+
+	<section class="slide">
+		<h2>Обычная раскладка, странная разметка</h2>
+
+		<pre>
+		    <code>&lt;div class="grid"&gt;</code>
+            <code>    &lt;div class="content"&gt;&lt;/div&gt;</code>
+            <code>    &lt;div class="header"&gt;&lt;/div&gt;</code>
+            <code>    &lt;div class="footer"&gt;&lt;/div&gt;</code>
+            <code>    &lt;div class="sidebar"&gt;&lt;/div&gt;</code>
+            <code>&lt;/div&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<img class="cover height" src="pictures/grid1.png" alt="">
+		
+		<pre>
+            <code>.grid { display: grid;</code>
+            <code>        grid-template-columns: 60px 1fr;</code>
+            <code>        grid-template-rows: 50px 1fr 60px; }</code>
+            <code>.header { grid-row: 1 / 2;</code>
+            <code>          grid-column: span 2; }</code>
+            <code>.sidebar { grid-row: 2 / 3;</code>
+            <code>           grid-column: 1 / 2; }</code>
+            <code>.footer { grid-area: -1 / 1 / -2 / span 2; }</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+	    <h2>ASCII-раскладка</h2>
+
+		<pre>
+            <code>.header { grid-area: h }</code>
+            <code>.sidebar { grid-area: s }</code>
+            <code>.content { grid-area: c }</code>
+            <code>.footer { grid-area: f }</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<img class="cover height" src="pictures/grid1.png" alt="">
+		
+		<pre>
+            <code>.grid {</code>
+            <code>    grid-template-columns: 60px 1fr;</code>
+            <code>    grid-template-rows: 50px 1fr 60px;</code>
+            <code>    grid-template-areas:</code>
+            <code>        'h h'</code>
+            <code>        's c'</code>
+            <code>        'f f';</code>
+            <code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<img class="cover height" src="pictures/grid2.png" alt="">
+		
+		<pre>
+            <code>.grid {</code>
+            <code>    grid-template: 50px 20px 1fr 60px / 1fr;</code>
+            <code>    grid-template-areas:</code>
+            <code>        'h h h h'</code>
+            <code>        's s s s'</code>
+            <code>        'c c c c'</code>
+            <code>        'f f f f';</code>
+            <code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+	    <h2>Что посмотреть?</h2>
+
+		<p><a href="https://www.youtube.com/watch?v=5yCuzHklYZ4">Вадим Макеев. Можно вообще всё. Раскладка по гриду.</a></p>
+		<p><a href="https://www.youtube.com/watch?v=Mff-bwBDxWM">Наталья Короткова. CSS Grid Layout. Готовность номер один</a></p>
+	</section>
+
+	<section class="slide">
+	    <h2>Контакты:</h2>
+		<h2><a href="https://twitter.com/webholt">@webholt</a></h2>
+		<h2><a href="https://twitter.com/lazy_frontend">@lazy_frontend</a></h2>
+        <h2>Доклад:</h2>
+        <h2><a href="https://gwer.github.io/modern-css">gwer.github.io/modern-css</a></h2>
+	</section>
+
 	<div class="progress"></div>
 	<script src="shower/shower.min.js"></script>
-	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
-	<!-- Photos by John Carey, fiftyfootshadows.net -->
 </body>
 </html>
